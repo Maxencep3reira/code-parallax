@@ -114,7 +114,7 @@ body {
     display: flex;
    
 
-   height:20%;
+   height:;
 }
 
 /* Conteneur principal */
@@ -177,7 +177,7 @@ body {
 
 /* Style pour la carte de recette */
 .recipe-card {
-    margin-top: 0px;
+    margin-bottom: 20%;
     background-color: #017965;
     border-radius: 20px;
     padding: 60px;
