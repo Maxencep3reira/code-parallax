@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onigiri</title>
+    <link rel="stylesheet" href="../css/stylemaki.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo Onigiri" class="logo">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+        <main>
+            <h1><a href="html/onigiri.html">Maki</a></h1>
+
+
+ <div id="scene" class="scene">
+            <div class="layer" data-depth="0.1">
+                <img src="../images/maki1.png" alt="maki1" class="onigiri-img left-img" id="oni1">
+            </div>
+            
+            <div class="layer" data-depth="0.1">
+            <img src="../images/maki2.png" alt="maki2" class="onigiri-img right-img" id="oni2">
+        </div>
+    </div>
+
+        </main>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Onigiri</a></li>
+                <li><a href="maki.html" class="active">Maki</a></li>
+                <li><a href="ramen.html">Ramen</a></li>
+                <li><a href="sushis.html">Sushis</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Inclusion de la librairie Parallax.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scene = document.getElementById('scene');
+            const parallaxInstance = new Parallax(scene, {
+                relativeInput: true,
+                hoverOnly: false,
+                calibrationThreshold: 100,
+                calibrationDelay: 1500,
+                supportDelay: 2000,
+                calibrateX: true,
+                calibrateY: true,
+                invertX: false,
+                invertY: false,
+                limitX: false,
+                limitY: false,
+                scalarX: 10.0,
+                scalarY: 10.0,
+                frictionX: 0.1,
+                frictionY: 0.1,
+                originX: 0.5,
+                originY: 0.5
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

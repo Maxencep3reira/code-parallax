@@ -1,0 +1,660 @@
+/* Styles généraux pour le corps */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /*background: radial-gradient(circle, #51A99A 20%, #108471 80%);*/
+   background-color: #108471;
+    height: 100vh;
+    display: grid;
+}
+
+.avatar-container {
+    padding: 20px;
+    height: 10vh;
+    display: flex;
+   /* position: fixed;*/
+}
+
+/* Cercle pour l'avatar en haut à gauche */
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+
+/* Style pour le bouton de téléchargement */
+.download-button {
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    z-index: 100;
+    
+    
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    cursor: pointer;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: background-color 1s; 
+    font-size: 20px;
+    width: 170px;
+    height: 45px;
+}
+/*
+.download-button img-src {
+    position:relative;
+    right: 120px;
+
+
+}
+*/
+
+.download-button:hover {
+    transition: 0.5s;
+    width: 30px;
+    color: transparent;
+    background-image: url("../images/picto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+
+@font-face {
+    font-family: "WendyOne-Regular";
+    src:
+      local("WendyOne-Regular"),
+      url('WendyOne-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('WendyOne-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('WendyOne-Regular.eot'), /* IE9 Compat Modes */
+      url("WendyOne-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "LibreFranklin-Light";
+    src:
+      local("LibreFranklin"),
+      url('LibreFranklin-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+      
+  }
+
+  @font-face {
+    font-family: "LibreFranklin-Bold";
+    src:
+      local("LibreFranklin"),
+      url('LibreFranklin-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */   
+  }
+
+  @font-face {
+    font-family: "LibreFranklin-Regular";
+    src:
+      local("LibreFranklin"),
+      url('LibreFranklin-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */   
+  }
+
+
+.text-container #onigiri{
+    font-family: "WendyOne-Regular";
+   
+}
+
+
+.carte{
+
+    display: flex;
+   
+
+   height:90vh;
+}
+
+/* Conteneur principal */
+.text-container {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    /*justify-content: flex-start;  Les éléments commencent en haut */
+   /* align-items: flex-start;  Alignement à gauche */
+    
+
+    font-size: 30px;
+    color: #ffffff;
+    width: 50%;
+    margin-left: 200px;
+    
+    
+}
+
+.text-container h2{
+    margin-top: 0px;
+    
+}
+
+#recette{
+
+    margin: 0px;
+    font-size: 70%;
+
+    font-family: "LibreFranklin-Light";
+
+   
+}
+
+#strong{
+
+    margin-top: 20px;
+    font-family: "LibreFranklin-Bold";
+}
+
+#ingredients{
+    margin-top: 10px;
+    font-family: "LibreFranklin-Regular";
+
+
+}
+
+
+
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Carte au-dessus du bouton */
+    align-items: center; /* Centré horizontalement */
+    justify-content: flex-start; /* Aligné avec le haut des textes */
+    gap: 20px; /* Espace entre la carte et le bouton */
+    width: 50%;
+    margin-right: 50px;
+    
+}
+
+/* Style pour la carte de recette */
+.recipe-card {
+    margin-top: 0px;
+    background-color: #017965;
+    border-radius: 20px;
+    padding: 60px;
+    width: 450px;
+    height: 600px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/* Style pour l'image de l'onigiri */
+.onigiri-image {
+    width: 80%;
+    rotate: -10deg;
+    margin-top: 110px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ingredient-container{
+
+    display: flex;
+    background-color: #017965;   
+}
+
+/*
+
+trouver un moyen de placer les éléments nori et riz,
+qui soit responsive
+*/
+#nori{
+
+     transform: translateY(50px);
+}
+
+#riz{
+
+     transform: translateY(-30px);
+}
+     
+
+#text-ingredient{
+
+font-size: 30px;
+margin-top: 20px;
+color: #ffffff;
+
+}
+
+
+.ingredients{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+}
+
+ .ingredients .image{
+    width: 300px;
+ }
+
+
+
+
+
+
+
+
+
+
+.recette{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.recette h2{
+
+
+    font-family: "WendyOne-Regular";
+    font-size: 250%;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.recette p{
+
+    font-family: "LibreFranklin-Regular";
+}
+
+
+.text-recette{
+
+display: flex;
+flex-direction: column;
+
+
+
+}
+
+
+.recette strong{
+
+    font-size: 800%;
+    display: flex;
+}
+
+.texte1{
+
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+
+.texte2{
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align:right;  
+    width: 900px;
+}
+
+.texte3{
+
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+
+.chiffre2{
+
+    margin: 0px 0px 0px 20px;
+    font-family: "LibreFranklin-Regular";
+}
+
+.chiffre1{
+
+    margin: 0px 20px 0px 0px;
+    font-family: "LibreFranklin-Regular";
+}
+
+.chiffre3{
+
+    margin: 0px 20px 0px 0px;
+    font-family: "LibreFranklin-Regular";
+}
+
+.text-recette{
+
+    width: 50%;
+    font-size: 25px; 
+    color: #ffffff; 
+    
+ }
+
+
+
+.image-recette{
+
+    
+    width: 50%;
+
+}
+
+ .image-recette .onigiri-recette{
+
+    
+    display: flex;
+ }
+
+ #image-recette1{
+
+    rotate: -20deg;
+    width: 400px;
+    position: absolute;
+    
+    transform: translate(20%, 20%);
+        
+/*
+trouver un moyen de placer les éléments nori et riz,
+qui soit responsive
+*/
+
+ }
+
+ #image-recette2{
+
+    rotate: 10deg;
+    width: 300px;
+    
+    position: absolute;
+    transform: translate(150%, 100%);
+}
+/*
+trouver un moyen de placer les éléments nori et riz,
+qui soit responsive
+*/
+
+
+
+
+
+ /*
+ .boutton-recette {
+    background-color: #FFFFFF;
+    color: #4AA27C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boutton-recette:hover {
+    background-color: #ddd;
+}
+*/
+
+
+.recette2 {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* flex-direction: column;
+    justify-content: center; /* Centre le contenu verticalement 
+    align-items: center; /* Centre le contenu horizontalement 
+    height: 100vh; /* Prend toute la hauteur de la page 
+    text-align: center; /* Centre le texte dans les paragraphes */
+}
+
+
+
+.recette2 h2{
+
+
+    font-family: "WendyOne-Regular";
+    font-size: 250%;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.recette2 p{
+
+    font-family: "LibreFranklin-Regular";
+}
+
+
+.text-recette2{
+
+display: flex;
+flex-direction: column;
+
+}
+
+
+.recette2 strong{
+
+    font-size: 800%;
+    display: flex;
+}
+
+.texte4{
+
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+
+.texte5{
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align:right;  
+}
+
+.texte6{
+
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+
+.chiffre4{
+
+    margin: 0px 50px 0px 0px;
+    font-family: "LibreFranklin-Regular";
+}
+
+.chiffre5{
+
+    margin: 0px 0px 0px 50px;
+    font-family: "LibreFranklin-Regular";
+}
+
+.chiffre6{
+
+    margin: 0px 50px 0px 0px;
+    font-family: "LibreFranklin-Regular";
+}
+
+
+
+.text-recette2{
+
+    width: 50%;
+    font-size: 25px; 
+    color: #ffffff; 
+   
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:0px;
+    margin-top: 00px;
+    
+      } 
+
+
+      .footter{
+        margin-top: 100px;
+        width: 100%;
+        height: 80vh;
+        background: linear-gradient(
+          to top,
+          #024338 50%,
+          #024338 0%,
+          #005648 50%,
+          #005648 0%
+        );
+
+      }
+
+
+     .footter-text h2{
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+      }
+
+     .footter-text p{
+     display: flex;
+     color: #E0E0E0;
+    justify-content: center;
+     }
+
+     .footter-text{
+
+        padding-top: 50px;
+     }
+
+
+ 
+
+.section-card .card-maki{
+    margin-top: 100px;
+    background: radial-gradient(circle, #FFB993 20%, #FF9962 80%);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.section-card .card-sushi{
+    margin-top: 100px;
+    
+    background: radial-gradient(circle, #FFDC9C 20%, #FFC353 80%);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.section-card .card-ramen{
+    margin-top: 100px;
+    background: radial-gradient(circle, #FA8B7D 20%, #EF5D4A 80%);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Style pour l'image de l'onigiri */
+.card-maki .maki-image {
+    width: 100%;
+    
+}
+
+
+/* Style pour l'image de l'onigiri */
+.card-sushi .sushi-image {
+    width: 100%;
+    
+}
+
+
+
+/* Style pour l'image de l'onigiri */
+.card-ramen .ramen-image {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+      
+      
+     
+
