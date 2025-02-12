@@ -7,13 +7,13 @@ body {
     font-family: Arial, sans-serif;
     /*background: radial-gradient(circle, #51A99A 20%, #108471 80%);*/
    background-color: #108471;
-    height: 100vh;
+    height: 100%;
     display: grid;
 }
 
 .avatar-container {
-    padding: 20px;
-    height: 10vh;
+    padding: 2%;
+    height: 1%;
     display: flex;
    /* position: fixed;*/
 }
@@ -30,9 +30,9 @@ body {
 .download-button {
 
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    padding: 10px 20px;
+    bottom: 4%;
+    right: 4%;
+    padding: 1% 2%;
     z-index: 100;
     
     
@@ -47,8 +47,8 @@ body {
     text-decoration: none;
     transition: background-color 1s; 
     font-size: 20px;
-    width: 170px;
-    height: 45px;
+    width: 10%;
+    height: 4%;
 }
 /*
 .download-button img-src {
@@ -61,7 +61,7 @@ body {
 
 .download-button:hover {
     transition: 0.5s;
-    width: 30px;
+    width: 1%;
     color: transparent;
     background-image: url("../images/picto.png");
     background-repeat: no-repeat;
@@ -125,10 +125,10 @@ body {
    /* align-items: flex-start;  Alignement à gauche */
     
 
-    font-size: 30px;
+    font-size: 180%;
     color: #ffffff;
     width: 50%;
-    margin-left: 200px;
+    margin-left: 12%;
     
     
 }
@@ -150,12 +150,12 @@ body {
 
 #strong{
 
-    margin-top: 20px;
+    margin-top: 2%;
     font-family: "LibreFranklin-Bold";
 }
 
 #ingredients{
-    margin-top: 10px;
+    margin-top: 1%;
     font-family: "LibreFranklin-Regular";
 
 
@@ -169,19 +169,19 @@ body {
     flex-direction: column; /* Carte au-dessus du bouton */
     align-items: center; /* Centré horizontalement */
     justify-content: flex-start; /* Aligné avec le haut des textes */
-    gap: 20px; /* Espace entre la carte et le bouton */
+    
     width: 50%;
-    margin-right: 50px;
+    margin-right: 3%;
     
 }
 
 /* Style pour la carte de recette */
 .recipe-card {
-    margin-bottom: 20%;
+    margin-bottom: 17%;
     background-color: #017965;
-    border-radius: 20px;
-    padding: 60px;
-    width: 450px;
+    border-radius: 3%;
+    padding: 6%;
+    width: 60%;
     height: 600px;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
