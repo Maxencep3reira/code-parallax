@@ -1,6 +1,8 @@
 /* Styles généraux pour le corps */
 
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -181,7 +183,7 @@ body {
     background-color: #017965;
     border-radius: 3%;
     padding: 6%;
-    width: 60%;
+    width: 450px;
     height: 600px;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -544,13 +546,14 @@ flex-direction: column;
     display: flex;
     justify-content: space-evenly;
     margin-bottom:0px;
-    margin-top: 00px;
+    margin-top: 0px;
     
       } 
 
 
       .footter{
         margin-top: 100px;
+
         width: 100%;
         height: 80vh;
         background: linear-gradient(
