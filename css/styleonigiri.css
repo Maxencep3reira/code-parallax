@@ -164,20 +164,22 @@ body {
 }
 
 
-
+/*
 
 .image-container {
     display: flex;
-    flex-direction: column; /* Carte au-dessus du bouton */
-    align-items: center; /* Centré horizontalement */
-    justify-content: flex-start; /* Aligné avec le haut des textes */
+    flex-direction: column;  Carte au-dessus du bouton 
+    align-items: center;  Centré horizontalement 
+    justify-content: flex-start;  Aligné avec le haut des textes 
     
     width: 50%;
     margin-right: 3%;
     
 }
 
-/* Style pour la carte de recette */
+
+
+/* Style pour la carte de recette 
 .recipe-card {
     margin-bottom: 17%;
     background-color: #017965;
@@ -191,7 +193,7 @@ body {
     
 }
 
-/* Style pour l'image de l'onigiri */
+/* Style pour l'image de l'onigiri 
 .onigiri-image {
     width: 80%;
     rotate: -10deg;
@@ -199,6 +201,40 @@ body {
     
 }
 
+*/
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin-right: 3%;
+}
+
+
+
+/* Effet Atropos appliqué à l'intérieur de la carte */
+.recipe-card .atropos-inner {
+    margin-bottom: 17%;
+    border-radius: 3%;
+    background-color: #017965;
+    padding: 6%;
+    width: 450px;
+    height: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style pour l'image avec rotation */
+.onigiri-image {
+    width: 80%;
+    rotate: -10deg;
+    margin-top: 110px;
+}
 
 
 
@@ -536,6 +572,58 @@ flex-direction: column;
 
 
 
+ 
+
+.atropos-inner {
+    border-radius: 20px;
+}
+
+/* Garder tes styles de fond pour chaque carte */
+.card-maki .atropos-inner {
+    background: radial-gradient(circle, #FFB993 20%, #FF9962 80%);
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.card-sushi .atropos-inner {
+    background: radial-gradient(circle, #FFDC9C 20%, #FFC353 80%);
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.card-ramen .atropos-inner {
+    background: radial-gradient(circle, #FA8B7D 20%, #EF5D4A 80%);
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Ajustement des images */
+.card-maki img, .card-sushi img, .card-ramen img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -550,6 +638,7 @@ flex-direction: column;
     
       } 
 
+      
 
       .footter{
         margin-top: 100px;
@@ -587,47 +676,7 @@ flex-direction: column;
 
  
 
-.section-card .card-maki{
-    margin-top: 100px;
-    background: radial-gradient(circle, #FFB993 20%, #FF9962 80%);
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    height: 400px;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    
-    
-}
 
-.section-card .card-sushi{
-    margin-top: 100px;
-    
-    background: radial-gradient(circle, #FFDC9C 20%, #FFC353 80%);
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    height: 400px;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-}
-
-.section-card .card-ramen{
-    margin-top: 100px;
-    background: radial-gradient(circle, #FA8B7D 20%, #EF5D4A 80%);
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    height: 400px;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-}
 
 
 
