@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recette Sushi</title>
+    <link rel="stylesheet" href="../css/styleramen-page.css" />
+  </head>
+  <body>
+    
+    <a href="#" class="download-button">Download recipes</a>
+
+    <div class="page">
+
+      
+
+      <section class="avatar-container">
+        <a href="../index.html">
+        <div class="avatar"></div></a>
+      </section>
+
+
+      <section class="carte">
+          
+          <div class="text-container">
+      
+      <p >
+        <p id="recette"> Recette</p >  <h2 id="onigiri">Ramen </h2>
+        <strong id="strong">Ingrédients :</strong>
+
+        <p id="ingredients">
+        200g de filet de poulet<br />
+        4 oeufs<br />
+        200 g de champignons de Paris<br />
+        125 g de nouilles pour ramen<br />
+        2 oignons tiges ou 2 échalotes<br />
+        1 litre d’eau<br />
+        4 cm de gingembre frais pelé et râpé<br />
+        1 cube de bouillon de poulet ou légumes pour l’option végétarienne<br />
+        4 cuillères à soupe de sauce soja salée<br />
+        2 cuillères à soupe de sauce soja sucrée<br />
+        2 cuillères à soupe d’huile de sésame<br />
+      </p>
+        <strong id="strong">Pour la déco :</strong>
+        
+        <p id="ingredients">
+        graines de sésame, coriandre facultatif<br />
+      </p>
+      
+      
+          </div>
+
+
+
+
+<!--
+          <div class="image-container">
+              <div class="recipe-card">
+                <img src="../images/onigiri.png" alt="Onigiri" class="onigiri-image" />
+              </div>   
+          </div>
+-->
+
+<div class="image-container">
+  <div class="atropos recipe-card">
+      <div class="atropos-scale">
+          <div class="atropos-rotate">
+              <div class="atropos-inner">
+                  <img src="../images/ramen.png" alt="maki" class="onigiri-image" />
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+<script>
+if (typeof Atropos !== "undefined") {
+    // Configuration Atropos
+    const atroposConfig = {
+        activeOffset: 40,
+        shadowScale: 1.05,
+        highlight: true,
+        rotateXMax: 15,
+        rotateYMax: 15,
+        stretchX: 40,
+        stretchY: 40
+    };
+
+    // Initialisation de l'effet Atropos sur la carte Onigiri
+    const onigiriCard = Atropos({ el: ".recipe-card", ...atroposConfig });
+} else {
+    console.error("Atropos library not loaded correctly");
+}
+</script>
+
+
+
+
+
+      </section>
+
+      <section class="ingredient-container">
+
+          <div class="ingredients" id="nori">
+              <img class="image" src="../images/poulet.png" alt="nori"></img>
+              <strong id="text-ingredient">Poulet</strong>
+          </div>
+          <div class="ingredients" id="riz">
+              <img class="image" src="../images/nouille.png" alt="riz"></img>
+              <strong id="text-ingredient">Nouille</strong>
+          </div>
+
+          <div class="ingredients" id="saumon">
+            <img class="image" src="../images/Onion.png" alt="saumon" ></img>
+            <strong id="text-ingredient">Onion</strong>
+          </div>
+      </section>
+
+
+      <section class="recette">
+        <!--
+          <div class="image-recette">
+
+             
+            <img class="onigiri-recette" src="../images/onigiri.png" alt="onigiri" id="image-recette1"></img>
+
+
+            <img class="onigiri-recette" src="../images/onigiri.png" alt="onigiri" id="image-recette2"></img>
+          
+          </div>
+          -->
+
+            <div class="text-recette">
+      
+              
+                <h2>Préparation du riz</h2>
+
+
+              <section class="texte1">
+                <strong class="chiffre1">1</strong>
+                <p>
+                Rincez abondamment le riz dans une passoire<br />
+                en le bras-sant, jusqu'à ce que l'eau soit claire. <br />
+                Laissez reposer environ 30 min.<br />
+                Mettez le riz dans une casserole et versez l'eau.<br />
+                Portez à ébullition à feu moyen et à couvert.<br />
+                Dès que l'ébullition est atteinte, faites cuire 10 min à feu moyen.<br />
+                Laissez reposer 10 min. Ne soulevez jamais le couvercle.<br />
+              </p>
+              </section>
+
+
+              <section class="texte2">
+                <strong class="chiffre2">2</strong>
+                <p>
+                Préparez le vinaigre à sushi. Dans une casserole,<br />
+                mélangez le sel, le sucre et le vinaigre de riz, puis faites chauffer<br />
+                quelques secondes à feu doux pour faire dissoudre le sucre.<br />
+              </p>
+              </section>
+
+
+              <section class="texte3">
+                <strong class="chiffre3">3</strong>
+                <p>
+                Mettez le riz dans un plat. Versez le mélange<br />
+                vinaigré et remuez avec une cuillère sans écraser<br />
+                les grains de riz. Laissez refroidir à température ambiante.<br />
+              </p>
+              </section>
+              
+              <!-- <a href="#" class="boutton-recette">Download recipes</a> -->
+              
+              
+                  </div>
+   
+      </section>
+
+
+
+
+
+
+
+
+
+
+<section class="recette2">
+
+<!--
+  <div class="image-recette">
+
+    <img class="onigiri-recette" src="../images/onigiri.png" alt="onigiri" id="image-recette1"></img>
+
+
+    <img class="onigiri-recette" src="../images/onigiri.png" alt="onigiri" id="image-recette2"></img>
+
+  </div>
+-->
+
+      <div class="text-recette2">
+      
+              
+        <h2>Montage des makis</h2>
+
+
+      <section class="texte4">
+        <strong class="chiffre4">4</strong>
+        <p>
+        Rincez rapidement les filets de poisson à l'eau fraiche et <br />
+        épon-gez-les délicatement avec du papier absorbant. <br />
+        Préparez les sushis. Posez les poissons sur une planche<br />
+        à découper. À l'aide d'un couteau aiguisé, coupez-les (à la <br/>
+        verticale mais légèrement en biais) en très fines lamelles <br />
+        d'une épaisseur de 5 mm et d'environ 3 x 6 cm. Fendez<br />
+        quelques crevettes en deux pour les mettre à plat.<br />
+        
+      </p>
+      </section>
+
+
+      <section class="texte5">
+        <strong class="chiffre5">5</strong>
+        <p>
+        Posez une lamelle de poisson au creux de la <br />
+        main. Prélevez une petite quantité de riz vinaigré<br />
+        (voir p. 6) et façonnez une boulette compacte. <br />
+        Déposez-la sur la lamelle de poisson et refermez <br />
+        doucement la main.<br />
+      </p>
+      </section>
+
+
+      <section class="texte6">
+        <strong class="chiffre6">6</strong>
+        <p>
+        Avec l'index et le majeur de l'autre main, aplatissez <br /> 
+        la boulette de riz.<br />
+        Retournez le sushi et donnez-lui sa forme définitive, <br />
+        légèrement fuselée. Confectionnez ainsi les sushis <br />
+        un beau rouleau, bien serré, de forme régulière.<br />
+        jusqu'à épuisement des lamelles de poisson.<br />
+      </p>
+      </section>
+      
+      <!-- <a href="#" class="boutton-recette">Download recipes</a> -->
+      
+      
+          </div>
+
+
+</section>
+
+
+
+
+
+
+
+<!--
+<section class="footter">
+   
+  <section class="footter-text">
+
+  <h2>Informations</h2>
+
+  <p>Ce site a été crée et développé par des gens beaucoup trop beau pour ce monde</p>
+  
+  </section>
+
+
+      <section class="section-card">
+
+
+        <a href="maki-page.html">
+          <div class="card-maki" >  
+              <img src="../images/maki-paire.png" alt="maki" class="maki-image" />
+          </div>
+        </a>
+
+
+        <a href="sushi-page.html">
+          <div class="card-sushi">            
+              <img src="../images/sushi.png" alt="sushi" class="sushi-image" />            
+          </div>
+        </a>
+
+        <a href="ramen-page.html">
+          <div class="card-ramen">           
+              <img src="../images/ramen.png" alt="ramen" class="ramen-image" />
+          </div>
+        </a>
+
+      </section>
+  </div>
+</section>
+-->
+
+
+<section class="footter">
+  <section class="footter-text">
+      <h2>Informations</h2>
+      <p>Ce site a été créé et développé par des gens beaucoup trop beaux pour ce monde</p>
+  </section>
+
+
+
+  <section class="section-card">
+
+
+      <a href="onigiri-page.html">
+          <div class="atropos card-maki">
+              <div class="atropos-scale">
+                  <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                          <img src="../images/onigiri.png" alt="onigiri" class="maki-image" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+
+
+      <a href="maki-page.html">
+          <div class="atropos card-sushi">
+              <div class="atropos-scale">
+                  <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                          <img src="../images/maki-paire.png" alt="sushi" class="sushi-image" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="sushi-page.html">
+          <div class="atropos card-ramen">
+              <div class="atropos-scale">
+                  <div class="atropos-rotate">
+                      <div class="atropos-inner">
+                          <img src="../images/sushis-paire.png" alt="sushi" class="ramen-image" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </a>
+  </section>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+<script>
+if (typeof Atropos !== "undefined") {
+    // Configuration Atropos
+    const atroposConfig = {
+        activeOffset: 40,
+        shadowScale: 1.05,
+        highlight: true,
+        rotateXMax: 20,
+        rotateYMax: 20,
+        stretchX: 50,
+        stretchY: 50
+    };
+
+    // Initialisation sur chaque carte
+    const maki = Atropos({ el: ".card-maki", ...atroposConfig });
+    const sushi = Atropos({ el: ".card-sushi", ...atroposConfig });
+    const ramen = Atropos({ el: ".card-ramen", ...atroposConfig });
+} else {
+    console.error("Atropos library not loaded correctly");
+}
+</script>
+
+
+
+<!--
+    <div class="container">
+      
+      <h2>Recette<br />Onigiri</h2>
+      <p>
+        <strong>Pour 1 portion moyenne :</strong><br />
+        300 g de riz à sushis<br />
+        30 cl d'eau<br />
+        4 c. à soupe de vinaigre de riz<br />
+        ½ c. à café de sel<br />
+        2 c. à soupe de sucre
+      </p>
+      <p>
+        <strong>Pour 1 grande portion :</strong><br />
+        400 g de riz à sushis<br />
+        40 cl d'eau<br />
+        5 c. à soupe de vinaigre de riz<br />
+        ½ c. à café de sel<br />
+        3 c. à soupe de sucre
+      </p>
+    </div>  
+      Carte de recette et bouton 
+  <div class="right-section">
+    <div class="recipe-card">
+      <img src="../images/onigiri.png" alt="Onigiri" class="onigiri-image" />
+    </div>
+    <a href="#" class="download-button">Download recipes</a>
+  </div>
+
+</div>
+ 
+<div class="parent2">
+  
+      <div class="image-container">
+          <img src="../images/nori.png" alt="nori" class="nori-image" />
+          <strong class="caption">Feuille d'algue nori</strong>
+      </div>
+      <div class="image-container">
+          <img src="../images/rice.png" alt="rice" class="rice-image" />
+          <strong class="caption2">Riz</strong>
+      </div>
+  
+</div>
+
+-->
+
+<!-- Nouvelle section ajoutée
+<section class="text-image-section">
+  <div class="image-container">
+    <img src="../images/onigiri-large.png" alt="Onigiri" />
+  </div>
+  <div class="text-container">
+    <h2>Recette</h2>
+    <ol>
+      <li>
+        Rincez abondamment le riz dans une passoire en le brassant, jusqu'à ce
+        que l'eau soit claire. Laissez reposer environ 30 min. Mettez le riz
+        dans une casserole et versez l'eau. Portez à ébullition à feu moyen et
+        à couvert. Dès que l'ébullition est atteinte, faites cuire 10 min à feu
+        moyen. Laissez reposer 10 min. Ne soulevez jamais le couvercle.
+      </li>
+      <li>
+        Préparez le vinaigre à sushi. Dans une casserole, mélangez le sel, le
+        sucre et le vinaigre de riz, puis faites chauffer quelques secondes à
+        feu doux pour faire dissoudre le sucre.
+      </li>
+      <li>
+        Mettez le riz dans un plat. Versez le mélange vinaigré et remuez avec
+        une cuillère sans écraser les grains de riz. Laissez refroidir à
+        température ambiante.
+      </li>
+    </ol>
+  </div>
+</section>
+
+-->
+
+
+
+
+  </body>
+</html>

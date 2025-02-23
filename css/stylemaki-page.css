@@ -11,7 +11,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     /*background: radial-gradient(circle, #51A99A 20%, #108471 80%);*/
-   background-color: #108471;
+   background-color: #FF8340;
     height: 100px;
     display: grid;
 }
@@ -116,7 +116,8 @@ body {
 .carte{
 
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: -60px;
+   
    
 }
 
@@ -217,9 +218,9 @@ body {
 
 /* Effet Atropos appliqué à l'intérieur de la carte */
 .recipe-card .atropos-inner {
-    margin-bottom: 17%;
+    margin-bottom: 30%;
     border-radius: 3%;
-    background-color: #017965;
+    background-color: #d9672a;
     padding: 6%;
     width: 450px;
     height: 600px;
@@ -250,7 +251,7 @@ body {
 .ingredient-container{
 
     display: flex;
-    background-color: #017965;   
+    background-color: #FE762D;   
 }
 
 /*
@@ -261,6 +262,17 @@ qui soit responsive
 #nori{
 
      transform: translateY(50px);
+}
+
+#saumon{
+
+    transform: translateY(50px);
+}
+
+#taille-saumon{
+
+    width: 70%;
+    margin-top: 30px;
 }
 
 #riz{
@@ -586,13 +598,14 @@ flex-direction: column;
 
 /* Garder tes styles de fond pour chaque carte */
 .card-maki .atropos-inner {
-    background: radial-gradient(circle, #FFB993 20%, #FF9962 80%);
+    background: radial-gradient(circle, #51A99A 20%, #108471 80%);
     padding: 20px;
     width: 300px;
     height: 400px;
     margin-top: 100px;
     display: flex;
     align-items: center;
+
 
 }
 
@@ -652,10 +665,10 @@ flex-direction: column;
         height: 80vh;
         background: linear-gradient(
           to top,
-          #024338 50%,
-          #024338 0%,
-          #005648 50%,
-          #005648 0%
+          #FF610D 50%,
+          #FF610D 0%,
+          #FE762D 50%,
+          #FE762D 0%
         );
 
       }
@@ -687,7 +700,9 @@ flex-direction: column;
 
 /* Style pour l'image de l'onigiri */
 .card-maki .maki-image {
-    width: 100%;
+    width: 80%;
+    rotate: -10deg;
+    display: flex;
     
 }
 
